@@ -254,7 +254,7 @@ function removeFromCart(productId) {
   }
 }
 function showAlert(message) {
-  // Создаем элемент div для отображения сообщения
+
   const alertDiv = document.createElement('div');
   alertDiv.textContent = message;
   alertDiv.style.position = 'fixed';
@@ -268,10 +268,9 @@ function showAlert(message) {
   alertDiv.style.fontSize = '16px';
   alertDiv.style.zIndex = '1000';
   
-  // Добавляем alert в body
+ 
   document.body.appendChild(alertDiv);
   
-  // Убираем alert через 1 секунду
   setTimeout(() => {
     alertDiv.remove();
   }, 1000);
@@ -281,9 +280,9 @@ function removeFromCart(productId) {
   const productIndex = cartItems.findIndex(item => item.id === productId);
 
   if (productIndex !== -1) {
-    cartItems.splice(productIndex, 1); // Удаляем товар
+    cartItems.splice(productIndex, 1); 
     saveCartToLocalStorage();
     updateCartDisplay();
-    showAlert('Товар удален из корзины!'); // Показываем кастомный alert
+    showAlert('Товар удален из корзины!');
   }
 }
