@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+<body>
+  <div class="w-[400px] h-[100px] ">
+    <h1 class="flex justify-between items-center text-[40px] text">Корзина <img src="https://img.freepik.com/premium-vector/shopping-backet-icon-buy-sign-sale-web-site-shop-retail-market-commerce-store-symbol_87543-11803.jpg" alt="" class="w-[100px]"></h1>
+    <ul id="cart-items" class="w-[400px] "></ul>
+    <p id="cart-total"></p>
+  </div>
+    <div class="div w-[800px] flex flex-wrap m-auto  justify-between gap-y-[30px] items-center z-10"></div>
+    
+</body>
+<script src="./APP.JS"></script>
+</html>
